@@ -1,0 +1,52 @@
+# Terraform
+
+# Create a EC2 Instances :
+
+Go to this link and follows the step to install the terraform intio system: 
+
+       https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+
+# Create a directory
+     $ mkdir terraform-course
+     $ cd terraform-course
+
+# Make another Directory
+    
+    $ mkdir terraform_Day-1
+    $ cd terraform_Day-1
+
+# Create a local simple file for a terraform
+    $ vim local.tf   
+  here .tf is the terraform file extension 
+
+# 1. Assignment create a text file using terraform :
+
+    <block> <parameter> {
+    key1=value1
+    key2=value2
+    }
+# local.tf contain 
+
+    resource "local_file" "text" {
+    filename = " path of the text file "
+    content = " This is a simple text file"
+    }
+  here resource is _Block_name_ and local_file is _resource_type_
+
+# Terraform initialize
+    $ terraform init
+    
+# terraform validate
+     $ terraform validate
+
+# terraform plan
+    $ terraform plan
+
+# terraform apply
+    $ terraform apply
+then press: yes
+
+# list the file 
+    $ ls
+
+it will show the .txt file, .tf file, .tfstate file
