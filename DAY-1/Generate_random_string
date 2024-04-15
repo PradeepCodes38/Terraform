@@ -1,0 +1,16 @@
+resource "random_string" "my_random_string" {
+  length  = 10
+# Specify the length of the random string (e.g., 10 characters)
+  special = true 
+# Include special characters in the random string (e.g., !@#$%^&*)
+  upper   = true 
+# Include uppercase letters in the random string
+  lower   = true 
+# Include lowercase letters in the random string
+  number  = true 
+# Include numbers in the random string
+}
+
+output "random_string_value" {
+  value = random_string.my_random_string.result
+}
