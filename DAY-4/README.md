@@ -1,4 +1,4 @@
-# variables, Input, Outputs, Providers, Resources and Modules in Terraform 
+# Variables, Input, Outputs, Providers, Resources and Modules in Terraform 
 
 
 
