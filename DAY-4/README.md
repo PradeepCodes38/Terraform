@@ -1,3 +1,8 @@
+# variables, Input, Outputs, Providers, Resources and Modules in Terraform 
+
+
+
+
 # Terraform Project 
 
     creating Multiple instance using MODULE in Terraform
